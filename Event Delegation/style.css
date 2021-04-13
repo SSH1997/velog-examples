@@ -1,0 +1,60 @@
+#root {
+  background-color: #363B40;
+  margin: 0;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  margin: 30px;
+  font-size: larger;
+  color: white;
+}
+
+h3 {
+  position: absolute;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start {
+  background-color: #fc8d59;
+  width: 500px;
+  height: 500px;
+}
+
+#start > h3 {
+  top: 110px;
+}
+
+#progress {
+  background-color: #ffffbf;
+  width: 400px;
+  height: 400px;
+}
+
+#progress > h3 {
+  top: 160px;
+}
+
+#end {
+  background-color: #91cf60;
+  width: 300px;
+  height: 300px;
+}
+
+#end > h3 {
+  top: 210px;
+}
+
+#logSpan {
+  width: 300px;
+  height: 200px;
+}

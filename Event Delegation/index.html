@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>Event Delegation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="root">
+  <span>
+    <input type="checkbox" id="capture">
+    <label for="capture">Enable Capture&nbsp;&nbsp;</label>
+
+    <input type="checkbox" id="stop">
+    <label for="stop">Stop Propagation</label>
+  </span>
+  <div>
+    <div id="start">
+      <h3>Start</h3>
+      <div id="progress">
+        <h3>Progress</h3>
+        <div id="end">
+          <h3>End</h3>
+        </div>
+      </div>
+    </div>
+    <span id='logSpan'>
+      <p>- Phase Log -</p>
+      <p id="phase"></p>
+    </span>
+  </div>
+  <script src="index.js"></script>
+</body>
