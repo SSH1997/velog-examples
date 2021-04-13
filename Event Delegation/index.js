@@ -58,3 +58,20 @@ capture.addEventListener("change", () => {
     element.addEventListener("click", callback, capture.checked);
   });
 });
+
+const blockDiv = document.getElementById("blockDiv");
+
+blockDiv.addEventListener("click", (event) => {
+  blockDiv.childNodes.forEach((element) => {
+    element.classList?.remove("clickedBlock");
+  });
+  event.target.closest("div").classList.add("clickedBlock");
+});
+
+const addBlock = document.getElementById("addBlock");
+
+addBlock.addEventListener("click", () => {
+  const tempDiv = document.createElement("div");
+  tempDiv.className = "block";
+  blockDiv.appendChild(tempDiv);
+});
